@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+void main()
+{
+	/*Дано натуральне число n.Написати програму, яка обчислює факторіал невід’ємних цілих чисел n(тобто
+	число ціле і більше за 0).Формула обчислення факторіала наведена нижче.
+	N! = N * (N-1)!*/
+	
+
+		int n;
+		int i;
+		int res;
+		cout << "Enter the digit: " << endl;
+		cin >> n;
+		res = 1;
+		for (i = 1; i <= n; i++) {
+			res = res * i;
+		}
+		cout << res;
+}
